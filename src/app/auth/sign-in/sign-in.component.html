@@ -1,0 +1,52 @@
+
+
+    <div class="box">
+
+      <div class="first_box">
+          <img variant="top" src="assets/logo1.png" alt="logo" class="css-logo"/>
+
+          <p class="mt-2 ml-5 text-center">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit longer.
+          </p>
+
+          <Button  routerLink='/auth/signup' routerLinkActive="router-link-active"
+          variant="primary" 
+          type="submit" 
+          size="sm" 
+          class="rounded-0 px-3 mx-auto">
+          Sign up
+        </Button>
+      </div>
+
+      <div class="second_box " >
+          <div class="text-center">
+          <img class="logo2" src="assets/logo2.png" alt=" img sms app " />
+              <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+     <form [formGroup]="signInForm" (ngSubmit)="onSubmit()">
+          <div controlId="formBasicEmail" class="form-floating">
+              <input id="name"placeholder="Enter your Email " class="form-control" id='email' formControlName="email" >
+              
+          </div>
+
+          <div controlId="formBasicPassword" class="form-floating">
+              <input type="password" id="password" placeholder="Password" class="form-control"  formControlName="password" />
+              <a routerLink='/auth/resetpassword' routerLinkActive="router-link-active" >forgot password ?</a>
+          </div>
+          <p class="text-danger">{{errorMessage}}</p>
+
+          <Button  type="submit" [disabled]="signInForm.invalid"
+          variant="primary" 
+          type="submit"  
+          size="sm" 
+          class="rounded-0 px-3 mx-auto">
+          Sign in 
+       </Button>
+        </form>
+       
+        </div>
+      </div>
+  </div>
+
+

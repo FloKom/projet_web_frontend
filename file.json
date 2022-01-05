@@ -1,0 +1,30 @@
+{
+        "discuss": {
+            "sms": [
+                {
+                    "content": "hgkhgkjh",
+                    "_id": "61d4b7e12a5d63907a8b75e2"
+                },
+                {
+                    "content": "hgkhgkjh",
+                    "_id": "61d4b7e12a5d63907a8b75e3"
+                },
+                {
+                    "content": "bonjour a tous",
+                    "_id": "61d4b7e12a5d63907a8b75e4"
+                },
+                {
+                    "content": "bon message",
+                    "type_send": false,
+                    "type_rcept": true,
+                    "_id": "61d4fb353fa135a118699d9b"
+                }
+            ]
+        },
+        "_id": "61d47a56b9b67ab17213b145",
+        "firstname": "Tres fors",
+        "lastname": "kamsu",
+        "phonenumber": "69999999999",
+        "idUser": "12332",
+        "__v": 0
+    }

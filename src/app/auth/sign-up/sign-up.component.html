@@ -1,0 +1,74 @@
+<!-- <div class="row">
+  <div class="col-sm-8 col-sm-offset-2">
+    <h2> signUp</h2>
+    <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+       <div class="form-group">
+         <label for="email"> email</label>
+         <input type="text" class="form-control" id='email' formControlName="email">
+       </div>
+       
+       <div class="form-group">
+        <label for="password"> password</label>
+        <input type="text" class="form-control" id='password' formControlName="password">
+      </div>
+
+      <button class="btn btn-primary" type="submit" [disabled]="signUpForm.invalid">creer un compte</button>
+      
+    </form>
+    <p class="text-danger">{{errorMessage}}</p>
+  </div>
+</div> -->
+
+<!-- <div class="row">
+  <div class="col-sm-8 col-sm-offset-2">
+    <h2> signIn</h2>
+    <form [formGroup]="signInForm" (ngSubmit)="onSubmit()">
+       <div class="form-group">
+         <label for="email"> email</label>
+         <input type="text" class="form-control" id='email' formControlName="email">
+       </div>
+       
+       <div class="form-group">
+        <label for="password"> password</label>
+        <input type="text" class="form-control" id='password' formControlName="password">
+      </div>
+
+      <button class="btn btn-primary" type="submit" [disabled]="signInForm.invalid">connexion</button>
+      <button class="btn btn-danger" routerLink='/auth/resetpassword' routerLinkActive="router-link-active" >forgot password</button>
+    </form>
+    <p class="text-danger">{{errorMessage}}</p>
+  </div>
+</div>
+ 
+    -->
+
+    <div class="box">
+
+      <div class="first_box">
+          <img variant="top" src='assets/signup1.png' alt="logo" class="css-logo"/>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, saepe? Lorem
+          </p>
+      </div>
+
+      <div class="second_box " >
+          
+              <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+                <h1>Create Account</h1>
+                <div class="social-container">
+                  <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                  <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email for registration</span>
+                <input type="text" placeholder="Name" />
+                <input type="email" placeholder="Email" id='email' formControlName="email" />
+                <input type="password" placeholder="Password" id='password' formControlName="password" />
+                <p class="text-danger">{{errorMessage}}</p>
+                <button type="submit" [disabled]="signUpForm.invalid" >Sign Up</button>
+                <p>  Have an account? <a routerLink='/auth/signin' routerLinkActive="router-link-active" class="active link">in now</a> </p>
+              </form>
+                
+        </div>
+  </div>
+
+

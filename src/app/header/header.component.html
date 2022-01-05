@@ -1,0 +1,15 @@
+<nav class="nav navbar">
+  <div class="container">
+    <ul class="nav navbar-nav">
+      
+      <li routerLinkActivate="active" *ngIf="!isAuth" >
+        <a routerLink="auth/signin"> sign in</a>
+      </li>
+
+      <li routerLinkActivate="activate" *ngIf="!isAuth">
+        <a routerLink="auth/signup" > sign up</a>
+      </li>
+      <li (click)="onSignOut()" *ngIf="isAuth" style="cursor: pointer;">Deconnexion</li>
+    </ul>
+  </div>
+</nav>

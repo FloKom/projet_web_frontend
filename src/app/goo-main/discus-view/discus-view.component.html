@@ -1,0 +1,63 @@
+
+<!-- //source destination -->
+<div class="right-section">
+
+  <nav>
+
+  </nav>
+
+<div class="message mCustomScrollbar" data-mcs-theme="minimal-dark">
+    <nav>
+      <p><img class="header-sms" *ngIf="myContact.photo" [src]="myContact.photo"> {{myContact.firstname}}</p>
+      <span class="sty-phone">{{myContact.phonenumber}}</span>
+      <div class="nav-discuss">
+        <button><img src="!!!!" alt="image"/></button>
+        <button><img src="!!!!" alt="image"/></button>
+        <button><img src="!!!!" alt="image"/></button>
+        <button><img src="!!!!" alt="image"/></button>
+      
+        <h1></h1>
+        <h2></h2>
+      </div>
+    </nav>
+
+  <ul>
+    <li class="msg-left">
+      <div class="msg-left-sub">
+      <!-- <app-sms-view></app-sms-view> -->
+      le sms de droite
+      </div>
+    </li>
+    
+    <!-- //sms source -->
+    <li class="msg-right" >
+     <app-sms></app-sms>
+    </li>
+    
+  </ul>
+</div>
+
+
+<!-- <div class="right-section-bottom">
+      <form [formGroup]="sendForm" (ngSubmit)="onSaveSms()">
+      <div class="upload-btn">
+      <button class="btn"><i class="fa fa-photo"></i></button>
+      <input type="file" name="myfile" />
+      </div>
+      <input type="text" name="textsend" placeholder="type here..." id="textsend" formControlName="textsend">
+      <button class="btn-send" type="submit"><i class="fa fa-send"></i></button>
+      </form>
+</div> -->
+  <form [formGroup]="sendForm" (ngSubmit)="onSaveSms()">
+  <div class="chat-footer">
+    <textarea type="text" name="textsend" placeholder="type here..." id="textsend" formControlName="textsend" class="send-message-text"></textarea>
+    <label class="upload-file">
+        <input type="file" required="">
+        <i class="fa fa-paperclip"></i>
+    </label>
+    <button type="submit" class="send-message-button btn-info"> <i class="fa fa-send"></i> </button>
+  </div>  
+  </form>
+</div>
+
+

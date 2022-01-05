@@ -1,0 +1,141 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&');
+
+ * {
+   box-sizing: border-box;
+ }
+s
+ h1 {
+   font-weight: bold;
+   margin: 0;
+ }
+ 
+ h2 {
+   text-align: center;
+ }
+ 
+ p {
+   font-size: 14px;
+   font-weight: 100;
+   line-height: 20px;
+   letter-spacing: 0.5px;
+   margin: 20px 0 30px;
+ }
+ 
+ span {
+   font-size: 12px;
+ }
+ 
+ a {
+   color: #333;
+   font-size: 14px;
+   text-decoration: none;
+   margin: 15px 0;
+ }
+ 
+ button {
+   border-radius: 20px;
+   border: 1px solid #5047B7;
+   background-color: #5047B7;
+   color: #FFFFFF;
+   font-size: 12px;
+   font-weight: bold;
+   padding: 12px 45px;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   transition: transform 80ms ease-in;
+ }
+ 
+ button:active {
+   transform: scale(0.95);
+ }
+ 
+ button:focus {
+   outline: none;
+ }
+ 
+ button.ghost {
+   background-color: transparent;
+   border-color: #FFFFFF;
+ }
+ 
+ form {
+   background-color: #FFFFFF;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   padding: 0 50px;
+   height: 100%;
+   text-align: center;
+ }
+ 
+ input {
+   background-color: #eee;
+   border: none;
+   padding: 12px 15px;
+   margin: 8px 0;
+   width: 100%;
+ }
+ 
+  img.css-logo{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 300px;
+  }
+  .Text-note{
+      text-align: center!important;
+      margin-top: .5rem!important;    
+      margin-left: 3rem !important;
+  }
+  p{
+     /* display: block !important; */
+     font-family: 'Poppins', sans-serif;
+  }
+  
+  .box{
+     display: flex;
+     justify-content: center;
+     background-color: #fff;
+     border: 1px solid oldlace;
+     height: 600px;
+     width: 1000px;
+     margin-top: auto;
+     margin-left: auto;
+     margin-right: auto;
+     border-radius: 8px;
+     box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.4);
+  }
+  .first_box ,.second_box{
+  
+   width: 300px;
+   height: 300px;
+   margin-top: auto;
+   margin-bottom: auto;
+  
+  }
+  .first_box{
+      margin-top: 145px;
+      margin-right: 55px;
+  }
+  .logo2{
+    width: 300px;
+    height: 10px;
+  }
+ 
+.block{
+  display: flex;
+  justify-content: space-evenly;
+}
+.droite{
+margin-top: 40px;
+margin-left: 120px;
+}
+.gauche{
+ display: flex;
+ flex-direction: row;
+}
+
+.form-group{
+  margin: 35px;
+}

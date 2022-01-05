@@ -1,0 +1,126 @@
+.chat-footer.new-message-textarea {
+  display: block;
+  position: relative;
+  padding: 0 10px;
+}
+
+.chat-footer.new-message-textarea .send-message-button {
+  right: 35px;
+}
+
+.chat-footer.new-message-textarea .upload-file {
+  right: 85px;
+}
+
+.chat-footer.new-message-textarea .send-message-text {
+  padding-right: 100px;
+  height: 90px;
+}
+
+.message-chat {
+  width: 100%;
+  overflow: hidden;
+}
+
+.chat-footer {
+  position: relative;
+  width: 100%;
+  padding: 0 80px;
+}
+
+.chat-footer .send-message-text {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: 55px;
+  max-height: 75px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 5px 95px 5px 10px;
+  font-size: 13px;
+  resize: vertical;
+  outline: none;
+  border: 1px solid #e0e6eb;
+}
+
+.chat-footer .send-message-button {
+  display: block;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  right: 100px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 1px solid rgba(0,0,0,0.05);
+  outline: none;
+  font-weight: 600;
+  border-radius: 50%;
+  padding: 0;
+}
+
+.chat-footer .send-message-button > i {
+  font-size: 16px;
+  margin: 0 0 0 -2px;
+}
+
+.chat-footer label.upload-file input[type="file"] {
+  position: fixed;
+  top: -1000px;
+}
+
+.chat-footer .upload-file {
+  display: block;
+  position: absolute;
+  right: 150px;
+  height: 30px;
+  font-size: 20px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  opacity: 0.25;
+}
+
+.chat-footer .upload-file:hover {
+  opacity: 1;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: 33px;
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+    color: #B1A8FF;
+
+  }
+
+nav div button{
+  margin: 10px;
+}
+
+.chat-footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #EDEDED;
+  padding: 10px 20px;
+}
+
+.msg-right{
+  position: absolute;
+}
+
+.header-sms{
+  width: 50px;
+  border-radius: 50%;
+  margin: 0 25px 0 25px;
+}

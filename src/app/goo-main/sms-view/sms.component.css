@@ -1,0 +1,16 @@
+
+div{
+  font-size: 12px;
+  width: 60rem;
+}
+.sms-text p{
+  background-color: #B1A8FF;
+  border-radius: 5px 5em 5em 0em / 2em 25em;
+  padding: 1.2rem;
+  padding-left: 2.3em;
+  color: #F6F4FF;
+  margin: 12px auto;
+  text-align: justify;
+}
+
+

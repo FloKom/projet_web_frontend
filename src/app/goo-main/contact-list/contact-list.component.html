@@ -1,0 +1,22 @@
+ <div class="row ">
+  <div class="col-xs-12">
+    <!-- <h2> vos contacts</h2>  -->
+    <div class="list-group">
+      <button class="list-group-item " *ngFor="let contact of contacts; let i = index"
+                                      (click)="selectContact(i)">
+     
+           
+            <button class="btn btn-default pull-right" (click)="onDeleteContact(contact)">
+              <span class="glyphicon glyphicon-minus"></span>
+            </button>
+          
+          <img class="img" *ngIf="contact.photo" [src]="contact.photo">
+          <div>
+          <h3 class="list-group-item-heading"> {{contact.phonenumber}}</h3>
+          <p class="list-group-item-text">{{contact.firstname}}</p>
+          </div>
+      </button>                                
+    </div>
+    <button class="btn btn-primary" (click)="onNewContact()">nouveau contact</button>
+  </div>
+</div> 

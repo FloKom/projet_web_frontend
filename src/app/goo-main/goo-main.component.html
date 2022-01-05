@@ -1,0 +1,93 @@
+<div class="container-fluid">
+
+  <div class="row">
+
+    <div class="col-md-4">
+
+      <div class="user-list-card">
+        <a routerLink='/contacts' routerLinkActive="router-link-active" >new discussion </a>
+        <div class="user-card"
+             *ngFor="let user of userList; let i = index"
+            
+             (click)="selectUserHandler(user.phonenumber)"
+        >
+        
+          <img src="assets/profil.png"
+               [alt]="user.firstname"
+               class="avatar"
+          />
+          <p class="username">{{user?.firstname}}</p>
+       
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-8">
+
+      <div class="chat-container">
+        <ng-container *ngIf="selectedUser">
+          <div class="chat-header">
+            
+            <img [src]="selectedUser.photo"
+                 [alt]="selectedUser.firstname"
+                 class="avatar"
+            />
+            <div class="username">{{selectedUser.firstname}}</div>
+            <div class=""> ---- {{selectedUser.phonenumber}}----</div>
+
+          </div>
+
+          <div class="chat-body">
+            <div 
+                 
+            >
+              <p class="message-container" >
+                <!-- <app-sms></app-sms> -->
+               
+              </p>
+              <div class="sms-text" *ngFor="let sms of messageText ; let i = index "> 
+                <p> {{sms.content}}
+                </p>
+                <span> {{sms.date_sent}}</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="chat-footer">
+            <form [formGroup]="sendForm" (ngSubmit)="onSaveSms()">
+            <div class="row">
+              <div class="col-md-10">
+                <div class="form-group mb-0">
+                  <input name="textsend"  id="textsend" formControlName="textsend" type="text"
+                         placeholder="write your message"
+                         class="form-control"
+                         
+                  />
+                </div>
+              </div>
+
+              <div class="col-md-2 text-center align-self-center">
+                <button type="submit" class="btn btn-primary btn-sm px-3"
+                        >Send
+                </button>
+              </div>
+
+            </div>
+            </form>
+          </div>
+        </ng-container>
+
+
+        <ng-container >
+          <p class="welcomme-text fs-5"> Welcomme </p>
+          <img src="assets/sms.jpg" alt="message1" class="message">
+          <p class="attention fw-bolder"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quo dolor dolore praesentium nesciunt ratione quasi, voluptatibus amet, libero pariatur cum soluta, beatae voluptas doloremque quia! Voluptatem aperiam nam voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ad harum consequatur sequi quas a totam dolore ratione iste nihil?</p>
+        </ng-container>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div> 

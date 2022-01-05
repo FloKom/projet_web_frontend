@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "goosms-9989e": {
+      "hosting": {
+        "GooSMS": [
+          "goosms-9989e"
+        ]
+      }
+    }
+  }
+}
